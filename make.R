@@ -1,8 +1,8 @@
 #primeira tarefa da segunda subimisao onde criamos a funcao makeCacheMatrix
-#A ideia ?? criar um array que ir?? armazenar os dados computados das medias de tempo de consumo precedentes
-# Para este fim ser?? utilizado o operador de atribui????o <<-que serve para atribuir valores a um objeto em ambientes diferente do atual.
-#O Exemplo do exerc??cio demonstra a fun????o makeVector que cria o vetor 
-#Como no exerc??cio de exemplo a fun????o se chamava 'makeVector' e agora chamaremos de 'makeCacheMatrix'
+#A ideia sera criar um array que ira armazenar os dados computados das medias de tempo de consumo precedentes
+# Para este fim sera utilizado o operador de atribuicao <<-que serve para atribuir valores a um objeto em ambientes diferente do atual.
+#O Exemplo do exercicio demonstra a funcao makeVector que cria o vetor 
+#Como no exercicio de exemplo a fun????o se chamava 'makeVector' e agora chamaremos de 'makeCacheMatrix'
 #inicio
 makeCacheMatrix <- function(x = matrix()) {
     ma <- NULL # permanece como no exemplo original
