@@ -6,11 +6,11 @@
 #inicio
 makeCacheMatrix <- function(x = matrix()) {
     ma <- NULL # permanece como no exemplo original
-    set <- function(y) { #repretimso a fun????o do exemplo original
+    set <- function(y) { #repretimos a funcao do exemplo original
         x <<- y #mesma variavel do exemplo original
         ma <<- NULL #mesma variavel do exemplo original
     }
-    get <- function() x  #mesma variavel e fun????o do exemplo original
+    get <- function() x  #mesma variavel e funcao do exemplo original
     setInv <- function(inverse) ma <<- inverse
     getInv <- function() ma
     list(set = set, get = get,
@@ -29,12 +29,19 @@ cacheSolve <- function(x, ...) {
     ma
 
 }
-
+#criamos uma matriz 2x2
 my_matrix <- matrix(c(4, 6, 8, 10), 2, 2)
+#exibimos a mariz
 my_matrix
+#executamos a funcao makeCacheMatrix e atribuimos a variavel run
 run<- makeCacheMatrix(my_matrix)
+#exibimos o conteudo de run
 run
+#como run ~e agora um objeto makeCacheMatrix acessamos o metodo get()
 run$get()
+#como run ~e agora um objeto makeCacheMatrix acessamos o metodo getInv()
 run$getInv()
+#passamos o objeto run como parametro para a funcao cacheSolve
 cacheSolve(run)
+#como cacheSolve executou o restante das tarefas podemos executar o objeti run e acessar o metodo getInv
 run$getInv()
