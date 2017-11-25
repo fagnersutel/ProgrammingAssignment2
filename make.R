@@ -32,3 +32,9 @@ cacheSolve <- function(x, ...) {
 
 my_matrix <- matrix(c(4, 6, 8, 10), 2, 2)
 my_matrix
+run<- makeCacheMatrix(my_matrix)
+run
+run$get()
+run$getInv()
+cacheSolve(teste)
+teste$getInv()
