@@ -36,5 +36,5 @@ run<- makeCacheMatrix(my_matrix)
 run
 run$get()
 run$getInv()
-cacheSolve(teste)
-teste$getInv()
+cacheSolve(run)
+run$getInv()
