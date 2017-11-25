@@ -37,9 +37,9 @@ my_matrix
 run<- makeCacheMatrix(my_matrix)
 #exibimos o conteudo de run
 run
-#como run ~e agora um objeto makeCacheMatrix acessamos o metodo get()
+#como run e agora um objeto makeCacheMatrix acessamos o metodo get()
 run$get()
-#como run ~e agora um objeto makeCacheMatrix acessamos o metodo getInv()
+#como run e agora um objeto makeCacheMatrix acessamos o metodo getInv()
 run$getInv()
 #passamos o objeto run como parametro para a funcao cacheSolve
 cacheSolve(run)
