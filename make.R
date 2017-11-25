@@ -28,4 +28,7 @@ cacheSolve <- function(x, ...) {
     x$setInv(ma)
     ma
 
-    }
+}
+
+my_matrix <- matrix(c(4, 6, 8, 10), 2, 2)
+my_matrix
