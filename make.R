@@ -3,7 +3,7 @@
 # Para este fim ser?? utilizado o operador de atribui????o <<-que serve para atribuir valores a um objeto em ambientes diferente do atual.
 #O Exemplo do exerc??cio demonstra a fun????o makeVector que cria o vetor 
 #Como no exerc??cio de exemplo a fun????o se chamava 'makeVector' e agora chamaremos de 'makeCacheMatrix'
-
+#inicio
 makeCacheMatrix <- function(x = matrix()) {
     ma <- NULL # permanece como no exemplo original
     set <- function(y) { #repretimso a fun????o do exemplo original
