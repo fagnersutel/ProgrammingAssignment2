@@ -6,13 +6,13 @@
 
 makeCacheMatrix <- function(x = matrix()) {
     ma <- NULL # permanece como no exemplo original
-    set <- function(y) { #repretimso a fun;??o do exemplo original
+    set <- function(y) { #repretimso a fun????o do exemplo original
         x <<- y #mesma variavel do exemplo original
         ma <<- NULL #mesma variavel do exemplo original
     }
     get <- function() x  #mesma variavel e fun????o do exemplo original
-    setmean <- function(mean) ma <<- mean
-    getmean <- function() m
+    setmean <- function(inverse) ma <<- inverse
+    getmean <- function() ma
     list(set = set, get = get,
          setmean = setmean,
          getmean = getmean)
@@ -21,10 +21,10 @@ cacheSolve <- function(x = matrix()) {
     ma <- x$getmean()
     if(!is.null(ma)) {
         message("getting cached data")
-        return(m)
+        return(ma)
     }
     data <- x$get()
-    ma <- mean(data, ...)
+    ma <- solve(data, ...)
     x$setmean(ma)
     ma
 
